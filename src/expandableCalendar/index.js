@@ -434,9 +434,12 @@ class ExpandableCalendar extends Component {
   renderKnob() {
     // TODO: turn to TouchableOpacity with onPress that closes it
     return (
-      <View style={this.style.knobContainer} pointerEvents={'none'}>
-        <View style={this.style.knob} testID={CALENDAR_KNOB}/>
-      </View>
+      <View style={this.style.knobContainer} >
+        <View style={this.style.knob} 
+          accessible accessibilityLabel="Calendar Scroll Knob" 
+          accessibilityHint="Move the knob to change between monthly view and weekly view" 
+          testID={CALENDAR_KNOB}/>
+      </View>     
     );
   }
 
