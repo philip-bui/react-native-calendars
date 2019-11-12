@@ -93,6 +93,8 @@ class CalendarHeader extends Component {
     if (!this.props.hideArrows) {
       leftArrow = (
         <TouchableOpacity
+          accessibilityLabel="Previous Month/Week Arrow"
+          accessibilityRole="button"
           onPress={this.onPressLeft}
           style={this.style.arrow}
           hitSlop={{left: 20, right: 20, top: 20, bottom: 20}}
@@ -108,6 +110,8 @@ class CalendarHeader extends Component {
       );
       rightArrow = (
         <TouchableOpacity
+          accessibilityLabel="Next Month/Week Arrow"
+          accessibilityRole="button"
           onPress={this.onPressRight}
           style={this.style.arrow}
           hitSlop={{left: 20, right: 20, top: 20, bottom: 20}}
