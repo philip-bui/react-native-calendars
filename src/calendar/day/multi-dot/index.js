@@ -84,7 +84,7 @@ class Day extends Component {
         style={containerStyle}
         onPress={this.onDayPress}
         onLongPress={this.onDayLongPress}>
-        <Text allowFontScaling={false} style={textStyle}>{String(this.props.children)}</Text>
+        <Text maxFontSizeMultiplier={1.4} style={textStyle}>{String(this.props.children)}</Text>
         <View style={{flexDirection: 'row'}}>{dot}</View>
       </TouchableOpacity>
     );
