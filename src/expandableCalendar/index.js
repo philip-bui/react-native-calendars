@@ -440,7 +440,7 @@ class ExpandableCalendar extends Component {
       <View style={this.style.knobContainer} >
         <Draggable disabled x={deviceWidth/2 -20}>   
           <View style={this.style.knob}
-            accessible accessibilityLabel="Calendar Scroll Knob" 
+            accessible accessibilityLabel="Calendar Scroll Knob. Double Tap to activate" 
             accessibilityHint="Move the knob to change between monthly view and weekly view" 
             testID={CALENDAR_KNOB}/>
         </Draggable>
