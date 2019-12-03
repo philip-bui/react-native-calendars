@@ -17,8 +17,11 @@ import styleConstructor from './style';
 import CalendarList from '../calendar-list';
 import asCalendarConsumer from './asCalendarConsumer';
 import Week from './week';
+import Draggable from 'react-native-draggable';
+import { Dimensions } from 'react-native';
 
 
+const deviceWidth = Dimensions.get('window').width;
 const commons = require('./commons');
 const UPDATE_SOURCES = commons.UPDATE_SOURCES;
 const POSITIONS = {
@@ -435,10 +438,12 @@ class ExpandableCalendar extends Component {
     // TODO: turn to TouchableOpacity with onPress that closes it
     return (
       <View style={this.style.knobContainer} >
-        <View style={this.style.knob} 
-          accessible accessibilityLabel="Calendar Scroll Knob" 
-          accessibilityHint="Move the knob to change between monthly view and weekly view" 
-          testID={CALENDAR_KNOB}/>
+        <Draggable disabled x={deviceWidth/2 -20}>   
+          <View style={this.style.knob}
+            accessible accessibilityLabel="Calendar Scroll Knob" 
+            accessibilityHint="Move the knob to change between monthly view and weekly view" 
+            testID={CALENDAR_KNOB}/>
+        </Draggable>
       </View>     
     );
   }

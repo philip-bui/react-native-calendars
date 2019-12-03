@@ -24,6 +24,7 @@
   "dependencies": {
     "lodash": "^4.0.0",
     "prop-types": "^15.5.10",
+    "react-native-draggable": "^3.0.0",
     "xdate": "^0.8.0"
   },
   "devDependencies": {
