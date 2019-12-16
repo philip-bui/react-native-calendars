@@ -30,7 +30,7 @@ const POSITIONS = {
 };
 const SPEED = 20;
 const BOUNCINESS = 6;
-const CLOSED_HEIGHT = 120; // header + 1 week
+const CLOSED_HEIGHT = 122; // header + 1 week
 const WEEK_HEIGHT = 48;
 const KNOB_CONTAINER_HEIGHT = 20;
 const HEADER_HEIGHT = 68;
