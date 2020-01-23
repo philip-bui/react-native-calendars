@@ -437,12 +437,10 @@ class ExpandableCalendar extends Component {
   renderKnob() {
     // TODO: turn to TouchableOpacity with onPress that closes it
     return (
-      <View style={this.style.knobContainer} >
-        <Draggable disabled x={deviceWidth/2 -20}>   
+      <View style={this.style.knobContainer} > 
           <View style={this.style.knob}
             accessible accessibilityLabel="Calendar Expand Knob. Double Tap and hold to activate. Drag the knob to change between monthly view and weekly view"
             testID={CALENDAR_KNOB}/>
-        </Draggable>
       </View>     
     );
   }
